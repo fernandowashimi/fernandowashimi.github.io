@@ -16,10 +16,10 @@
     </head>
     <body>
         <!-- Barra de navegação -->
-        <div class="container">
+        <div class="container-fluid">
             <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
                 <div class="container">
-                    <a class="navbar-brand" href="#">Navbar</a>
+                    <a class="navbar-brand" href="#">{ instituição }</a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapseMenu" aria-controls="collapseMenu" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
@@ -40,25 +40,84 @@
             </nav>
         </div>
         <!-- Fim da barra de navegação -->
-        <!-- Seção 1 -->
-        <div class="container"> 
-            <div class="parallax" style="background-image: url('resources/images/background.jpg');">
-                <div class="row justify-content-center">
-                    <div class="col-lg-3 text-center">
-                        <p>aaaaaaaaa</p>
-                    </div>
-                    <div class="col-lg-3 text-center">
-                        <p>aaaaaaaaa</p>
+        <!-- Seção 1 (Intro) -->
+        <div class="container-fluid"> 
+            <div class="parallax" style="background-image: url('resources/images/section-1.jpeg');">
+                <div class="section-content">
+                    <p class="display-3 text-light">Reconstruindo sonhos.</p>
+                    <p class="display-5 text-light font-weight-light transparent">
+                        Nós da { instituição } temos o objetivo de acolher moradores de rua
+                        para auxiliá-los a reencontrar parentes próximos e reuni-los em cooperativas
+                        de trabalho com base nos seus conhecimentos.
+                    </p>
+                    <button type="button" class="btn btn-outline-light btn-lg">Conheça mais sobre nossa história</button>
+                </div>
+            </div>
+        </div>
+        <!-- Seção 2 (Depoimentos) -->
+        <div class="container section-content-2">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="carousel slide" data-ride="carousel" id="quote">
+                        <ol class="carousel-indicators">
+                            <li data-target="#quote" data-slide-to="0" class="active"></li>
+                            <li data-target="#quote" data-slide-to="1"></li>
+                            <li data-target="#quote" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <!-- Depoimento 1 -->
+                            <div class="carousel-item active">
+                                <blockquote class="blockquote">
+                                    <div class="row justify-content-center">
+                                        <div class="col-md-2 text-center">
+                                            <img class="rounded-circle" src="resources/images/section-2-quote-1.jpg" style="width: 100px; height: 100px;" />
+                                        </div>
+                                        <div class="col-md-6">
+                                            <p class="mb-0 h4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                                            <footer class="blockquote-footer mt-3">Maria Joana, ex-moradora de rua</footer>
+                                        </div>
+                                    </div>
+                                </blockquote>
+                            </div>
+                            <!-- Depoimento 2 -->
+                            <div class="carousel-item">
+                                <blockquote class="blockquote">
+                                    <div class="row justify-content-center">
+                                        <div class="col-lg-2 text-center">
+                                            <img class="rounded-circle" src="resources/images/section-2-quote-2.jpg" style="width: 100px; height: 100px;" />
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <p class="mb-0 h4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                                            <footer class="blockquote-footer mt-3">João Pavan, à procura de um emprego</footer>
+                                        </div>
+                                    </div>
+                                </blockquote>
+                            </div>
+                            <!-- Depoimento 3 -->
+                            <div class="carousel-item">
+                                <blockquote class="blockquote">
+                                    <div class="row justify-content-center">
+                                        <div class="col-md-2 text-center">
+                                            <img class="rounded-circle" src="resources/images/section-2-quote-3.jpg" style="width: 100px; height: 100px;" />
+                                        </div>
+                                        <div class="col-md-6">
+                                            <p class="mb-0 h4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                                            <footer class="blockquote-footer mt-3">Antônio José, ex-morador de rua</footer>
+                                        </div>
+                                    </div>
+                                </blockquote>
+                            </div>
+                        <a class="carousel-control-prev" href="#quote" role="button" data-slide="prev">
+                            <i class="fa fa-chevron-left" aria-hidden="true"></i>
+                        </a>
+                        <a class="carousel-control-next" href="#quote" role="button" data-slide="next">
+                            <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Seção 2 -->
-        <div class="container"> 
-            <div class="parallax" style="background-image: url('resources/images/background2.jpg');">
-    
-            </div>
-        </div>
+        
         <!-- jQuery -->
         <script src="resources/js/jquery-3.2.1/jquery-3.2.1.min.js"></script>
         <!-- Popper.js JS -->
