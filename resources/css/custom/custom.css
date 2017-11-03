@@ -37,6 +37,124 @@
 }
 
 /* CSS elements **/
+nav a{
+    font-size: 1.3em !important;
+}
+
+/** Custom classes **/
+.parallax {
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+}
+
+.section-content {
+    width: 60vw;
+    margin-left: auto;
+    margin-right: auto;
+    align-self: center;
+    font-family: 'Comfortaa' !important;
+}
+
+.section-content p:nth-child(1) {
+    font-size: 6vmin;
+}
+
+.section-content p:nth-child(2) {
+    font-size: 3vmin;
+}
+
+.section-content button {
+    font-size: 2.5vmin;
+}
+
+.section-content-4 {
+    padding-top: 5vh;
+    padding-bottom: 7vh;
+}
+
+.section-content-2 {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.article {
+    flex-grow: 1;
+    min-width: 25%;
+    min-height: 200px;
+    max-width: 50%;
+    max-height: 400px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #FFF;
+}
+
+.article p {
+    padding: 1vh;
+    background-color: rgba(0, 0, 0, 0.5)
+}
+
+.img-article {
+    width: 100%;
+    height: auto;
+    background-position: center;
+    background-size: cover;
+}
+
+.transparent {
+    opacity: 0.8;
+}
+
+.display-5 {
+    font-size: 30px;
+}
+
+@media (max-width: 991px) {
+    .container {
+        max-width: 100%;
+        padding: 0px;
+    }
+
+    .navbar {
+        position: fixed !important;
+        top: 0px;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: rgba(0, 0, 0, 0.9);
+    }
+
+    .section-content {
+        width: 80vw;
+    }
+
+    .article {
+        min-width: 100%;
+        max-width: 100%;
+    }
+
+    .section-content-4 {
+        padding-top: 5vh;
+        padding-bottom: 5vh;
+    }
+
+    blockquote {
+        padding-left: 50px;
+        padding-right: 50px;
+        text-align: center;
+    }
+}
+
+/** Fonts **/
 @font-face {
     font-family: 'Courgette';
     font-style: normal;
@@ -74,70 +192,4 @@
          url('../../fonts/quicksand/quicksand-v7-latin-regular.woff') format('woff'), /* Modern Browsers */
          url('../../fonts/quicksand/quicksand-v7-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
          url('../../fonts/quicksand/quicksand-v7-latin-regular.svg#Quicksand') format('svg'); /* Legacy iOS */
-}
-
-nav a{
-    font-size: 1.3em !important;
-}
-
-/** Custom classes **/
-.parallax {
-    height: 100vh;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-}
-
-.section-content {
-    width: 60vw;
-    margin-left: auto;
-    margin-right: auto;
-    align-self: center;
-    font-family: 'Comfortaa' !important;
-}
-
-.section-content-2 {
-    padding-top: 5vh;
-    padding-bottom: 5vh;
-}
-
-.transparent {
-    opacity: 0.8;
-}
-
-.display-5 {
-    font-size: 30px;
-}
-
-@media (max-width: 1000px) {
-    .container {
-        max-width: 100%;
-        padding: 0px;
-    }
-
-    .navbar {
-        position: fixed !important;
-        top: 0px;
-        width: 100%;
-        margin-left: auto;
-        margin-right: auto;
-        background-color: rgba(0, 0, 0, 0.9);
-    }
-
-    .section-content {
-        width: 90vw;
-    }
-
-    .section-content-2 {
-        padding-top: 5vh;
-        padding-bottom: 5vh;
-    }
-
-    blockquote {
-        padding-left: 50px;
-        padding-right: 50px;
-        text-align: center;
-    }
 }
