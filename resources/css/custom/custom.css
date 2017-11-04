@@ -8,8 +8,31 @@
 }
 
 .btn:hover {
-    color: #333333 !important;
+    cursor: pointer;
+}
+
+.btn-outline-primary:hover {
+    color: #FFF !important;
+    background-color: #ffa726;
+    border-color: #ffa726;
     transition: 0.5s;
+}
+
+.btn-outline-secondary:hover {
+    color: #333 !important;
+    background-color: #FFF;
+    border-color: #FFF;
+    transition: 0.5s;
+}
+
+.btn-outline-primary {
+    color: #ffa726;
+    border-color: #ffa726;
+}
+
+.btn-outline-secondary {
+    color: #FFF;
+    border-color: #FFF;
 }
 
 .carousel-control-prev {
@@ -41,14 +64,23 @@ nav a {
     font-size: 1.3em !important;
 }
 
+footer div {
+    background-color: #ffa726;
+}
+
 footer img {
-    border: 10px solid rgb(253, 56, 174);
-    height: 100px;
-    width: 100px;
+    border: 10px solid rgb(230, 81, 0);
+    height: 80px;
+    width: 80px;
 }
 
 footer img:hover {
     animation: pulse 1.3s ease infinite;
+    cursor: pointer;
+}
+
+footer * {
+    font-family: 'Comfortaa'
 }
 
 @keyframes pulse {
@@ -58,7 +90,7 @@ footer img:hover {
 
     20% {
         transform: scale(1.1);
-        border: 10px solid rgba(253, 56, 174, 0.5);
+        border: 10px solid rgb(230, 81, 0, 0.5);
     }
   
     30% {
@@ -67,7 +99,7 @@ footer img:hover {
 
     35% {
         transform: scale(1.1);
-        border: 10px solid rgb(253, 56, 174, 0.5);
+        border: 10px solid rgb(230, 81, 0, 0.5);
     }
 
     100% {
@@ -91,6 +123,8 @@ footer img:hover {
     margin-right: auto;
     align-self: center;
     font-family: 'Comfortaa' !important;
+    border-radius: 5px;
+    padding: 2vh;
 }
 
 .section-content p:nth-child(1) {
@@ -171,6 +205,22 @@ footer img:hover {
     height: auto;
     background-position: center;
     background-size: cover;
+}
+
+.social {
+    width: 100%;
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffa726;
+    padding: 2vh;
+}
+
+.social div {
+    margin-left: 2vw;
+    margin-right: 2vw;
 }
 
 .transparent {
