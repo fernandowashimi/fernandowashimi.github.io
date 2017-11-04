@@ -37,8 +37,42 @@
 }
 
 /* CSS elements **/
-nav a{
+nav a {
     font-size: 1.3em !important;
+}
+
+footer img {
+    border: 10px solid rgb(253, 56, 174);
+    height: 100px;
+    width: 100px;
+}
+
+footer img:hover {
+    animation: pulse 1.3s ease infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    20% {
+        transform: scale(1.1);
+        border: 10px solid rgba(253, 56, 174, 0.5);
+    }
+  
+    30% {
+        transform: scale(1);
+    }
+
+    35% {
+        transform: scale(1.1);
+        border: 10px solid rgb(253, 56, 174, 0.5);
+    }
+
+    100% {
+        transform: scale(1);
+    }
 }
 
 /** Custom classes **/
@@ -96,11 +130,40 @@ nav a{
     justify-content: center;
     text-align: center;
     color: #FFF;
+    position: relative;
+}
+
+.article:hover .overlay {
+    height: 100%;
+}
+
+.article:hover > p {
+    opacity: 0;
 }
 
 .article p {
     padding: 1vh;
-    background-color: rgba(0, 0, 0, 0.5)
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: .3s ease;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+}
+
+.overlay a {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .img-article {
