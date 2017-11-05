@@ -64,25 +64,6 @@ nav a {
     font-size: 1.3em !important;
 }
 
-footer div {
-    background-color: #ffa726;
-}
-
-footer img {
-    border: 10px solid rgb(230, 81, 0);
-    height: 80px;
-    width: 80px;
-}
-
-footer img:hover {
-    animation: pulse 1.3s ease infinite;
-    cursor: pointer;
-}
-
-footer * {
-    font-family: 'Comfortaa'
-}
-
 @keyframes pulse {
     0% {
         transform: scale(1);
@@ -107,7 +88,7 @@ footer * {
     }
 }
 
-/** Custom classes **/
+/** Custom classes **/  
 .parallax {
     height: 100vh;
     background-attachment: fixed;
@@ -125,6 +106,7 @@ footer * {
     font-family: 'Comfortaa' !important;
     border-radius: 5px;
     padding: 2vh;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .section-content p:nth-child(1) {
@@ -207,6 +189,25 @@ footer * {
     background-size: cover;
 }
 
+.footer {
+    background-color: #ffa726;
+}
+
+.footer img {
+    border: 10px solid rgb(230, 81, 0);
+    height: 80px;
+    width: 80px;
+}
+
+.footer img:hover {
+    animation: pulse 1.3s ease infinite;
+    cursor: pointer;
+}
+
+.footer * {
+    font-family: 'Comfortaa'
+}
+
 .social {
     width: 100%;
     display: flex;
@@ -243,7 +244,6 @@ footer * {
         width: 100%;
         margin-left: auto;
         margin-right: auto;
-        background-color: rgba(0, 0, 0, 0.9);
     }
 
     .section-content {
