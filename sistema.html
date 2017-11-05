@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Título da página -->
+    <title>Projeto ONG</title>
+    <!-- Favicon -->
+    <link rel="icon" href="resources/images/icon.ico">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="resources/css/bootstrap-4.0.0/bootstrap.min.css">
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" type="text/css" href="resources/css/fontawesome-4.7.0/font-awesome.min.css">
+    <!-- CSS customizado -->
+    <link rel="stylesheet" type="text/css" href="resources/css/custom/custom-sistema.css">
+</head>
+
+<body>
+    <!-- Barra de navegação -->
+    <div class="container-fluid">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#">{ instituição }</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapseMenu" aria-controls="collapseMenu"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapseMenu">
+                    
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- Fim da barra de navegação -->
+    <div class="jumbotron">
+        <div class="container">
+            <h1 class="display-3">Olá, visitante!</h1>
+            <p class="lead">Seja bem-vindo ao nosso sistema de coleta de informações. Navegue pelos perfis e caso tenha alguma informação relevante você poderá nos enviar de forma totalmente anônima.</p>
+            <p class="lead">
+                <a class="btn btn-outline-primary btn-lg" href="#" role="button" id="btnHide">Entendido!</a>
+            </p>
+        </div>
+    </div>
+    <!-- Fim do jumbotron -->
+    <div class="container-fluid">
+        <div class="show-panel">
+            <div class="card">
+                <div class="card-image" style="background-image: url('resources/images/profile-1.jpg');">
+                    <div class="overlay">
+                        <a href="#">Ver detalhes...</a>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">José Antônio Galvão Silva</h4>
+                    <div class="row my-2">
+                        <div class="col-lg-6">
+                            <p class="card-text h5"><i class="fa fa-calendar-o"></i> 32 anos</p>
+                        </div>
+                        <div class="col-lg-6">
+                            <p class="card-text h5"><i class="fa fa-heart-o"></i> solteiro</p>
+                        </div>
+                    </div>
+                    <div class="row my-2">
+                        <div class="col-md-12">
+                            <p class="card-text h5"><i class="fa fa-map-marker"></i> Região de São Bernardo do Campo</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <button type="button" class="btn btn-outline-primary btn-block mt-3" data-toggle="modal" data-target="#modal">Fornecer informações</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <p class="text-muted">Morador de rua, nascido na cidade de Santo André (SP), já trabalhou como motorista de caminhão durante 5 anos.</small>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-image" style="background-image: url('resources/images/profile-3.jpg');">
+                    <div class="overlay">
+                        <a href="#">Ver detalhes...</a>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">Maria Cardoso de Albuquerque</h4>
+                    <div class="row my-2">
+                        <div class="col-lg-6">
+                            <p class="card-text h5"><i class="fa fa-calendar-o"></i> 28 anos</p>
+                        </div>
+                        <div class="col-lg-6">
+                            <p class="card-text h5"><i class="fa fa-heart-o"></i> solteira</p>
+                        </div>
+                    </div>
+                    <div class="row my-2">
+                        <div class="col-md-12">
+                            <p class="card-text h5"><i class="fa fa-map-marker"></i> Região de Santo André</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <button type="button" class="btn btn-outline-primary btn-block mt-3 data-toggle="modal" data-target="#modal"">Fornecer informações</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <p class="text-muted">Moradora de rua, nascido na cidade de Santo André (SP), já trabalhou como custureira durante 3 anos.</small>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-image" style="background-image: url('resources/images/profile-2.jpg');">
+                    <div class="overlay">
+                        <a href="#">Ver detalhes...</a>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">Pedro Vitor</h4>
+                    <div class="row my-2">
+                        <div class="col-lg-6">
+                            <p class="card-text h5"><i class="fa fa-calendar-o"></i> 48 anos</p>
+                        </div>
+                        <div class="col-lg-6">
+                            <p class="card-text h5"><i class="fa fa-heart-o"></i> casado</p>
+                        </div>
+                    </div>
+                    <div class="row my-2">
+                        <div class="col-md-12">
+                            <p class="card-text h5"><i class="fa fa-map-marker"></i> Região de São Bernardo do Campo</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <button type="button" class="btn btn-outline-primary btn-block mt-3 data-toggle="modal" data-target="#modal"">Fornecer informações</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <p class="text-muted">Morador de rua, nascido na cidade de São Paulo, já trabalhou como cozinheiro durante 5 anos.</small>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-image" style="background-image: url('resources/images/profile-4.jpg');">
+                    <div class="overlay">
+                        <a href="#">Ver detalhes...</a>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">Guilherme Antônio José</h4>
+                    <div class="row my-2">
+                        <div class="col-lg-6">
+                            <p class="card-text h5"><i class="fa fa-calendar-o"></i> 35 anos</p>
+                        </div>
+                        <div class="col-lg-6">
+                            <p class="card-text h5"><i class="fa fa-heart-o"></i> solteiro</p>
+                        </div>
+                    </div>
+                    <div class="row my-2">
+                        <div class="col-md-12">
+                            <p class="card-text h5"><i class="fa fa-map-marker"></i> Região de São Bernardo do Campo</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <button type="button" class="btn btn-outline-primary btn-block mt-3 data-toggle="modal" data-target="#modal"">Fornecer informações</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <p class="text-muted">Morador de rua, nascido na cidade de Santo André (SP), já trabalhou como auxiliar durante 3 anos.</small>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-image" style="background-image: url('resources/images/profile-5.jpg');">
+                    <div class="overlay">
+                        <a href="#">Ver detalhes...</a>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">Vitor Luis</h4>
+                    <div class="row my-2">
+                        <div class="col-lg-6">
+                            <p class="card-text h5"><i class="fa fa-calendar-o"></i> 25 anos</p>
+                        </div>
+                        <div class="col-lg-6">
+                            <p class="card-text h5"><i class="fa fa-heart-o"></i> solteiro</p>
+                        </div>
+                    </div>
+                    <div class="row my-2">
+                        <div class="col-md-12">
+                            <p class="card-text h5"><i class="fa fa-map-marker"></i> Região de São Bernardo do Campo</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <button type="button" class="btn btn-outline-primary btn-block mt-3" data-toggle="modal" data-target="#modal">Fornecer informações</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <p class="text-muted">Morador de rua, nascido na cidade de Santo André (SP), já trabalhou como frentista durante 4 anos.</small>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-image" style="background-image: url('resources/images/section-2-quote-2.jpg');">
+                    <div class="overlay">
+                        <a href="#">Ver detalhes...</a>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">João</h4>
+                    <div class="row my-2">
+                        <div class="col-lg-6">
+                            <p class="card-text h5"><i class="fa fa-calendar-o"></i> 20 anos</p>
+                        </div>
+                        <div class="col-lg-6">
+                            <p class="card-text h5"><i class="fa fa-heart-o"></i> solteiro</p>
+                        </div>
+                    </div>
+                    <div class="row my-2">
+                        <div class="col-md-12">
+                            <p class="card-text h5"><i class="fa fa-map-marker"></i> Região de São Bernardo do Campo</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <button type="button" class="btn btn-outline-primary btn-block mt-3" data-toggle="modal" data-target="#modal">Fornecer informações</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <p class="text-muted">Nunca trabalhou.</small>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Nova mensagem</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                <div class="form-group">
+                    <label for="recipient-name" class="col-form-label">E-mail:</label>
+                    <input type="text" class="form-control" id="recipient-name">
+                </div>
+                <div class="form-group">
+                    <label for="message-text" class="col-form-label">Mensagem:</label>
+                    <textarea class="form-control" id="message-text"></textarea>
+                </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Fechar</button>
+                <button type="button" class="btn btn-outline-primary">Enviar</button>
+            </div>
+            </div>
+        </div>
+        </div>
+    <div class="footer">
+        <p>{ instituição } 2017 - Todos os direitos reservados.</p>
+    </div>
+    <!-- jQuery -->
+    <script type="text/javascript" src="resources/js/jquery-3.2.1/jquery-3.2.1.js"></script>
+    <!-- Popper.js JS -->
+    <script type="text/javascript" src="resources/js/popper.js-1.12.5/popper.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script type="text/javascript" src="resources/js/bootstrap-4.0.0/bootstrap.min.js"></script>
+    <!-- JS customizado -->
+    <script type="text/javascript" src="resources/js/custom/custom.js"></script>
+</body>
+
+</html>

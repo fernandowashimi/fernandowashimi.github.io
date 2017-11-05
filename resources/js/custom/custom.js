@@ -19,7 +19,7 @@ function hex2rgba(hex, opacity)
 $(window).scroll(function() {
     if($(this).scrollTop() > 60)
     {
-        $(".navbar").css("background-color", hex2rgba('#ffa726', 0.8));
+        $(".navbar").css("background-color", hex2rgba('#ffa726', 0.9));
         $(".navbar").css("transition", ".5s ease");
         $("#btnLogin").css("border-color", "#FFF");
         $("#btnLogin").css("color", "#FFF");
@@ -28,4 +28,9 @@ $(window).scroll(function() {
         $("#btnLogin").css("border-color", "#ffa726");
         $("#btnLogin").css("color", "#ffa726");
     }
+});
+
+$("#btnHide").click(function() {
+    $('.jumbotron').slideUp( "slow", function() {
+    })
 });
